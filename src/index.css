@@ -1,0 +1,57 @@
+:root {
+  --white-light: rgba(255, 255, 255, 0.75);
+  --grey-light: #f1f1f1;
+  --input: #cd2c2c;
+  --grey-dark: #d3d3d3;
+  --grey-black: rgb(0 0 0 / 70%);
+  --grey-secondary: rgb(0 0 0 / 34%);
+  --grey: rgba(255, 255, 255, 0.5);
+  --main-black: #191919;
+  --dark: rgb(12 0 0 / 65%);
+  --main-radius: 0.8rem;
+  --main-orange: #d87d4a;
+  --main-transition: 0.3s all ease-in;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #fafafa;
+}
+
+/* Desktop Breakpoint */
+@media (max-width: 62rem) {
+  body {
+    font-size: 56.25%;
+  }
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 47.93rem) {
+  body {
+    font-size: 50%;
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 30rem) {
+  body {
+    font-size: 40%;
+  }
+}
