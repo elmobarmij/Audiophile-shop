@@ -24,7 +24,7 @@ const dataReducer = (state, action) => {
   }
 }
 
-const BASE_URL = '/public/data/products.json'
+const BASE_URL = './../../public/data/products.json'
 
 const ProductProvider = ({ children }) => {
   const [{ products, status }, dispatch] = useReducer(dataReducer, initialState)
