@@ -31,7 +31,7 @@ const ProductProvider = ({ children }) => {
     const getData = async () => {
       dispatch({ type: 'FETCH_INIT' })
       try {
-        const res = await fetch('/src/data/products.json')
+        const res = await fetch('/public/data/products.json')
         if (!res.ok) {
           throw new Error('Failed to fetch data')
         }
