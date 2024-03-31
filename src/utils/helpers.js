@@ -1,5 +1,5 @@
 export function updateImgPath(path) {
-  return path?.replace('/images', 'src/assets')
+  return path?.replace('/images', './src/assets')
 }
 
 export function formatPrice(price) {
