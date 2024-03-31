@@ -24,6 +24,8 @@ const dataReducer = (state, action) => {
   }
 }
 
+const BASE_URL = '/public/data/products.json'
+
 const ProductProvider = ({ children }) => {
   const [{ products, status }, dispatch] = useReducer(dataReducer, initialState)
 
@@ -31,11 +33,11 @@ const ProductProvider = ({ children }) => {
     const getData = async () => {
       dispatch({ type: 'FETCH_INIT' })
       try {
-        const res = await fetch('/public/data/products.json/products')
+        const res = await fetch(`${BASE_URL}`)
         if (!res.ok) {
           throw new Error('Failed to fetch data')
         }
-        const data = await res.json()
+        const data = (await res.json())['products']
         dispatch({ type: 'FETCH_SUCCESS', payload: data })
       } catch (error) {
         console.error(error)
