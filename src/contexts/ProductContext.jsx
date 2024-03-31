@@ -31,12 +31,11 @@ const ProductProvider = ({ children }) => {
     const getData = async () => {
       dispatch({ type: 'FETCH_INIT' })
       try {
-        const res = await fetch('/dist/data/products.json')
+        const res = await fetch('/dist/data/products.json/products')
         if (!res.ok) {
           throw new Error('Failed to fetch data')
         }
-        const jsonData = await res.json()
-        const data = jsonData['products']
+        const data = await res.json()
         dispatch({ type: 'FETCH_SUCCESS', payload: data })
       } catch (error) {
         console.error(error)
