@@ -26,7 +26,7 @@ function InnerProductPage() {
       <GoBackButton />
       {status === 'error' ? (
         <Error />
-      ) : (
+      ) : status === 'ready' ? (
         <>
           <ChosenProduct />
           <ProductFeatures />
@@ -36,7 +36,7 @@ function InnerProductPage() {
           <BestGear />
           <Footer />
         </>
-      )}
+      ) : null}
     </div>
   )
 }
