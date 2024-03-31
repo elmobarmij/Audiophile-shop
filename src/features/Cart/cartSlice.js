@@ -65,14 +65,16 @@ const cartSlice = createSlice({
 
 // returned totalPrice from localStorage
 function initialTotalPrice() {
-  return JSON.parse(localStorage.getItem('cartItems'))
-    .map(item => item.cartItemQuantity * item.price)
-    .reduce((acc, cur) => acc + cur, 0)
+  return (
+    JSON.parse(localStorage.getItem('cartItems'))
+      ?.map(item => item.cartItemQuantity * item.price)
+      .reduce((acc, cur) => acc + cur, 0) || 0
+  )
 }
 
 // calculated totalPrice with new quantity chanages
 function calcTotalPrice(state) {
-  state.totalCartItemsPrice = state.items
+  state.totalCartItemsPrice = state?.items
     .map(item => item.cartItemQuantity * item.price)
     .reduce((acc, cur) => acc + cur, 0)
 }
