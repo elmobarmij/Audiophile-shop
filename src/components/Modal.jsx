@@ -24,7 +24,7 @@ const StyledModal = styled.div`
   border-radius: var(--main-radius);
   padding: 3.2rem 4rem;
   transition: all 0.5s;
-  z-index: 100000;
+  z-index: 999999999;
 
   @media (max-width: 30rem) {
     padding: 2rem 2.4rem;
@@ -39,7 +39,7 @@ const Overlay = styled.div`
   height: 100vh;
   background-color: var(--grey-secondary);
   backdrop-filter: blur(3px);
-  z-index: 100000;
+  z-index: 999999999;
   transition: all 0.5s;
 `
 

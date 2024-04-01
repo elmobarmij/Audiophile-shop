@@ -47,11 +47,22 @@ const TechMenuContainer = styled.div`
 `
 
 const WithBorder = styled.div`
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2rem;
   border-bottom: 1px solid #303030;
+
+  // Set logo in header to the center (not the same in footer)
+  @media (max-width: 47.93rem) {
+    & a:has(img) {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      translate: -50%;
+    }
+  }
 `
 
 const CartImg = styled.img`

@@ -64,6 +64,11 @@ const Item = styled.div`
       height: 18rem;
     }
   }
+  @media (max-width: 47.93rem) {
+    & {
+      height: 15rem;
+    }
+  }
 `
 const H3 = styled.h3`
   color: var(--main-black);

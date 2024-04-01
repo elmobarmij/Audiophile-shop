@@ -9,13 +9,17 @@ const StyledHomePageFirstSpeakerProduct = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10rem;
-  background: url(${patternBg}) -17rem -3.125rem no-repeat var(--main-orange);
+  background:
+    url(${patternBg}) -17rem -3.125rem no-repeat,
+    var(--main-orange);
   border-radius: var(--main-radius);
   padding: 8rem 14rem 10rem;
   overflow: hidden;
 
   @media (max-width: 62rem) {
-    background: url(${patternBg}) 50% -10rem no-repeat var(--main-orange);
+    background:
+      url(${patternBg}) 50% -10rem no-repeat,
+      var(--main-orange);
     background-size: 60rem 60rem;
     display: flex;
     gap: 3rem;

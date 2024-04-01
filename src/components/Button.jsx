@@ -10,6 +10,10 @@ const StyledButton = styled.button`
     cursor: not-allowed;
   }
 
+  @media (max-width: 47.93rem) {
+    font-weight: 600;
+  }
+
   border: ${props =>
     props.type === 'primary' ||
     props.type === 'secondary' ||

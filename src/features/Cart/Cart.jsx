@@ -15,7 +15,7 @@ const ContentContainer = styled.div`
   border-radius: var(--main-radius);
 
   @media (max-width: 30rem) {
-    max-width: 20rem;
+    max-width: 28rem;
   }
 `
 const ItemsContainer = styled.div`

@@ -143,9 +143,9 @@ function Nav({ style, setShowTechMenu, isInHeader }) {
               />
             </Icons>
           )}
-          <NavLink to="/">
+          <StyledNavLink to="/">
             <img src={logo} alt="Audiophile logo" />
-          </NavLink>
+          </StyledNavLink>
         </Div>
         <StyledNav
           // This style is to show 'StyledNav' only in footer and not in mobile header
