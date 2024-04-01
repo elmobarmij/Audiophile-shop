@@ -1,4 +1,5 @@
 import { useChosenProduct } from '../hooks/useChosenProduct'
+import { updateImgPath } from '../utils/helpers'
 import Button from './Button'
 import Container from './Container'
 import GridTwoCols from './GridTwoCols'
@@ -56,9 +57,9 @@ function ChosenProduct() {
       <Container>
         <GridTwoCols>
           <ReusableProductImage>
-            <img src={desktopImg} alt={slug} />
-            <img src={tabletImg} alt={slug} />
-            <img src={mobileImg} alt={slug} />
+            <img src={updateImgPath(desktopImg)} alt={slug} />
+            <img src={updateImgPath(tabletImg)} alt={slug} />
+            <img src={updateImgPath(mobileImg)} alt={slug} />
           </ReusableProductImage>
 
           <div>

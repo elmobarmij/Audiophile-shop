@@ -1,3 +1,7 @@
+export function updateImgPath(path) {
+  return path?.replace('/images', '/assets')
+}
+
 export function formatPrice(price) {
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
