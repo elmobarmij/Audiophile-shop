@@ -6,6 +6,10 @@ import { emailRegex } from '../../constants/emailRegex'
 const H2 = styled.h2`
   font-size: 3rem;
   line-height: 3rem;
+
+  @media (max-width: 32rem) {
+    font-size: 2rem;
+  }
 `
 const H3 = styled.h3`
   color: var(--main-orange);
@@ -54,7 +58,7 @@ function CheckoutInputs() {
 
   return (
     <>
-      <H2>CHECHOUT</H2>
+      <H2>CHECKOUT</H2>
       <div>
         <H3>BILLING DETAILS</H3>
         <InputGroup>
