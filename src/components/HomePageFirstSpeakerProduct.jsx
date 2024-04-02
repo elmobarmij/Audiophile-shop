@@ -3,23 +3,22 @@ import Button from './Button'
 import speakerDesktop from '../assets/home/mobile/image-speaker-zx9.png'
 import speakerSmall from '../assets/home/mobile/image-speaker-zx9.png'
 import styled from 'styled-components'
-import patternBg from '../assets/home/desktop/pattern-circles.svg'
 
 const StyledHomePageFirstSpeakerProduct = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10rem;
   background:
-    url(${patternBg}) -17rem -3.125rem no-repeat,
-    var(--main-orange);
+    url('../assets/home/desktop/pattern-circles.svg') -17rem -3.125rem no-repeat,
+    #d87d4a;
   border-radius: var(--main-radius);
   padding: 8rem 14rem 10rem;
   overflow: hidden;
 
   @media (max-width: 62rem) {
     background:
-      url(${patternBg}) 50% -10rem no-repeat,
-      var(--main-orange);
+      url('../assets/home/desktop/pattern-circles.svg') 50% -10rem no-repeat,
+      #d87d4a;
     background-size: 60rem 60rem;
     display: flex;
     gap: 3rem;
